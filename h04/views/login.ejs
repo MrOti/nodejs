@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Bejelentkezés</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<% include partials/nav.ejs %>
+		<h1> Bejelentkezés </h1>
+		<form id= "contact-form" method= "POST" value= "/login">
+		<label for= "email">E-mail: </label><br>
+		<input type= "text" name= "email" required value= <%= req.email %>><br>
+		<label for= "pw">Jelszó: </label><br>
+		<input type= "text" name= "pw" required value= <%= req.pw %>><br><br>
+		<input type= "submit" value= "Bejelentkezés">
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Regisztráció</title>
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+	<body>
+		<% include partials/nav.ejs %>
+		<h1> Regisztráció </h1>
+		<form id= "contact-form" method= "POST" value= "/register">
+		<label for= "who">Név: </label><br>
+		<input type= "text" name= "who" required value= <%= req.who %>><br>
+		<label for= "email">E-mail: </label><br>
+		<input type= "E-mail" name= "email" required value= <%= req.email %>><br>
+		<label for= "pw">Jelszó: </label><br>
+		<input type= "password" minlength=8 name= "pw" required value= <%= req.pw %>><br><br>
+		<input type= "submit" value= "Regisztrálok!">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Profil</title>
+	</head>
+	<body>
+		<% include partials/nav.ejs %>
+		<h1> Profil </h1>
+		<form id= "contact-form">
+		<label for= "obj1">Tárgy felvétele: </label><br>
+		<input type= "text" name= "obj1" value= <%= req.obj1 %>><br><br>
+		<input type= "submit" value= "Hozzáad"><br><br>
+		<label for= "obj2">Tárgy törlése: </label><br>
+		<input type= "text" name= "obj2" value= <%= req.obj2 %>><br><br>
+		<input type= "submit" value= "Eltávolítás"><br><br>
+		Tárgyak listázása:<br><br>
+		<input type= "submit" value= "Listázás">
+	</body>
+</html>
